@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E819B15F2105BFBE0045D760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B15E2105BFBE0045D760 /* AppDelegate.m */; };
+		E819B1622105BFBE0045D760 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B1612105BFBE0045D760 /* ViewController.m */; };
+		E819B1652105BFBE0045D760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E819B1632105BFBE0045D760 /* Main.storyboard */; };
+		E819B1672105BFC10045D760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E819B1662105BFC10045D760 /* Assets.xcassets */; };
+		E819B16A2105BFC10045D760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E819B1682105BFC10045D760 /* LaunchScreen.storyboard */; };
+		E819B16D2105BFC10045D760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B16C2105BFC10045D760 /* main.m */; };
+		E819B1772105BFC10045D760 /* GokoTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B1762105BFC10045D760 /* GokoTableViewTests.m */; };
+		E819B1822105BFC10045D760 /* GokoTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B1812105BFC10045D760 /* GokoTableViewUITests.m */; };
+		E819B1922105C0BD0045D760 /* UITableView+Goko.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B1912105C0BD0045D760 /* UITableView+Goko.m */; };
+		E819B19D2105DBE30045D760 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B19C2105DBE30045D760 /* DemoCell.m */; };
+		E819B1A02105DBEF0045D760 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B19F2105DBEF0045D760 /* DemoModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E819B1732105BFC10045D760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E819B1522105BFBE0045D760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E819B1592105BFBE0045D760;
+			remoteInfo = GokoTableView;
+		};
+		E819B17E2105BFC10045D760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E819B1522105BFBE0045D760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E819B1592105BFBE0045D760;
+			remoteInfo = GokoTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E819B15A2105BFBE0045D760 /* GokoTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GokoTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E819B15D2105BFBE0045D760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E819B15E2105BFBE0045D760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E819B1602105BFBE0045D760 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E819B1612105BFBE0045D760 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E819B1642105BFBE0045D760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E819B1662105BFC10045D760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E819B1692105BFC10045D760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E819B16B2105BFC10045D760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E819B16C2105BFC10045D760 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E819B1722105BFC10045D760 /* GokoTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GokoTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E819B1762105BFC10045D760 /* GokoTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GokoTableViewTests.m; sourceTree = "<group>"; };
+		E819B1782105BFC10045D760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E819B17D2105BFC10045D760 /* GokoTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GokoTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E819B1812105BFC10045D760 /* GokoTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GokoTableViewUITests.m; sourceTree = "<group>"; };
+		E819B1832105BFC10045D760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E819B1902105C0BD0045D760 /* UITableView+Goko.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Goko.h"; sourceTree = "<group>"; };
+		E819B1912105C0BD0045D760 /* UITableView+Goko.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Goko.m"; sourceTree = "<group>"; };
+		E819B1932105C14D0045D760 /* GokoDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GokoDefine.h; sourceTree = "<group>"; };
+		E819B19B2105DBE30045D760 /* DemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
+		E819B19C2105DBE30045D760 /* DemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
+		E819B19E2105DBEF0045D760 /* DemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
+		E819B19F2105DBEF0045D760 /* DemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E819B1572105BFBE0045D760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E819B16F2105BFC10045D760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E819B17A2105BFC10045D760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E819B1512105BFBE0045D760 = {
+			isa = PBXGroup;
+			children = (
+				E819B15C2105BFBE0045D760 /* GokoTableView */,
+				E819B1752105BFC10045D760 /* GokoTableViewTests */,
+				E819B1802105BFC10045D760 /* GokoTableViewUITests */,
+				E819B15B2105BFBE0045D760 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E819B15B2105BFBE0045D760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E819B15A2105BFBE0045D760 /* GokoTableView.app */,
+				E819B1722105BFC10045D760 /* GokoTableViewTests.xctest */,
+				E819B17D2105BFC10045D760 /* GokoTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E819B15C2105BFBE0045D760 /* GokoTableView */ = {
+			isa = PBXGroup;
+			children = (
+				E819B1932105C14D0045D760 /* GokoDefine.h */,
+				E819B19A2105DBB50045D760 /* demo */,
+				E819B18F2105BFEC0045D760 /* UITableView+Goko */,
+				E819B15D2105BFBE0045D760 /* AppDelegate.h */,
+				E819B15E2105BFBE0045D760 /* AppDelegate.m */,
+				E819B1602105BFBE0045D760 /* ViewController.h */,
+				E819B1612105BFBE0045D760 /* ViewController.m */,
+				E819B1632105BFBE0045D760 /* Main.storyboard */,
+				E819B1662105BFC10045D760 /* Assets.xcassets */,
+				E819B1682105BFC10045D760 /* LaunchScreen.storyboard */,
+				E819B16B2105BFC10045D760 /* Info.plist */,
+				E819B16C2105BFC10045D760 /* main.m */,
+			);
+			path = GokoTableView;
+			sourceTree = "<group>";
+		};
+		E819B1752105BFC10045D760 /* GokoTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				E819B1762105BFC10045D760 /* GokoTableViewTests.m */,
+				E819B1782105BFC10045D760 /* Info.plist */,
+			);
+			path = GokoTableViewTests;
+			sourceTree = "<group>";
+		};
+		E819B1802105BFC10045D760 /* GokoTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E819B1812105BFC10045D760 /* GokoTableViewUITests.m */,
+				E819B1832105BFC10045D760 /* Info.plist */,
+			);
+			path = GokoTableViewUITests;
+			sourceTree = "<group>";
+		};
+		E819B18F2105BFEC0045D760 /* UITableView+Goko */ = {
+			isa = PBXGroup;
+			children = (
+				E819B1902105C0BD0045D760 /* UITableView+Goko.h */,
+				E819B1912105C0BD0045D760 /* UITableView+Goko.m */,
+			);
+			path = "UITableView+Goko";
+			sourceTree = "<group>";
+		};
+		E819B19A2105DBB50045D760 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				E819B19B2105DBE30045D760 /* DemoCell.h */,
+				E819B19C2105DBE30045D760 /* DemoCell.m */,
+				E819B19E2105DBEF0045D760 /* DemoModel.h */,
+				E819B19F2105DBEF0045D760 /* DemoModel.m */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E819B1592105BFBE0045D760 /* GokoTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E819B1862105BFC10045D760 /* Build configuration list for PBXNativeTarget "GokoTableView" */;
+			buildPhases = (
+				E819B1562105BFBE0045D760 /* Sources */,
+				E819B1572105BFBE0045D760 /* Frameworks */,
+				E819B1582105BFBE0045D760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GokoTableView;
+			productName = GokoTableView;
+			productReference = E819B15A2105BFBE0045D760 /* GokoTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E819B1712105BFC10045D760 /* GokoTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E819B1892105BFC10045D760 /* Build configuration list for PBXNativeTarget "GokoTableViewTests" */;
+			buildPhases = (
+				E819B16E2105BFC10045D760 /* Sources */,
+				E819B16F2105BFC10045D760 /* Frameworks */,
+				E819B1702105BFC10045D760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E819B1742105BFC10045D760 /* PBXTargetDependency */,
+			);
+			name = GokoTableViewTests;
+			productName = GokoTableViewTests;
+			productReference = E819B1722105BFC10045D760 /* GokoTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E819B17C2105BFC10045D760 /* GokoTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E819B18C2105BFC10045D760 /* Build configuration list for PBXNativeTarget "GokoTableViewUITests" */;
+			buildPhases = (
+				E819B1792105BFC10045D760 /* Sources */,
+				E819B17A2105BFC10045D760 /* Frameworks */,
+				E819B17B2105BFC10045D760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E819B17F2105BFC10045D760 /* PBXTargetDependency */,
+			);
+			name = GokoTableViewUITests;
+			productName = GokoTableViewUITests;
+			productReference = E819B17D2105BFC10045D760 /* GokoTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E819B1522105BFBE0045D760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Goko;
+				TargetAttributes = {
+					E819B1592105BFBE0045D760 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					E819B1712105BFC10045D760 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E819B1592105BFBE0045D760;
+					};
+					E819B17C2105BFC10045D760 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E819B1592105BFBE0045D760;
+					};
+				};
+			};
+			buildConfigurationList = E819B1552105BFBE0045D760 /* Build configuration list for PBXProject "GokoTableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E819B1512105BFBE0045D760;
+			productRefGroup = E819B15B2105BFBE0045D760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E819B1592105BFBE0045D760 /* GokoTableView */,
+				E819B1712105BFC10045D760 /* GokoTableViewTests */,
+				E819B17C2105BFC10045D760 /* GokoTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E819B1582105BFBE0045D760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E819B16A2105BFC10045D760 /* LaunchScreen.storyboard in Resources */,
+				E819B1672105BFC10045D760 /* Assets.xcassets in Resources */,
+				E819B1652105BFBE0045D760 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E819B1702105BFC10045D760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E819B17B2105BFC10045D760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E819B1562105BFBE0045D760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E819B1622105BFBE0045D760 /* ViewController.m in Sources */,
+				E819B19D2105DBE30045D760 /* DemoCell.m in Sources */,
+				E819B1A02105DBEF0045D760 /* DemoModel.m in Sources */,
+				E819B1922105C0BD0045D760 /* UITableView+Goko.m in Sources */,
+				E819B16D2105BFC10045D760 /* main.m in Sources */,
+				E819B15F2105BFBE0045D760 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E819B16E2105BFC10045D760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E819B1772105BFC10045D760 /* GokoTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E819B1792105BFC10045D760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E819B1822105BFC10045D760 /* GokoTableViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E819B1742105BFC10045D760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E819B1592105BFBE0045D760 /* GokoTableView */;
+			targetProxy = E819B1732105BFC10045D760 /* PBXContainerItemProxy */;
+		};
+		E819B17F2105BFC10045D760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E819B1592105BFBE0045D760 /* GokoTableView */;
+			targetProxy = E819B17E2105BFC10045D760 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E819B1632105BFBE0045D760 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E819B1642105BFBE0045D760 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E819B1682105BFC10045D760 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E819B1692105BFC10045D760 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E819B1842105BFC10045D760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E819B1852105BFC10045D760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E819B1872105BFC10045D760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GokoTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goko.GokoTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E819B1882105BFC10045D760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GokoTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goko.GokoTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E819B18A2105BFC10045D760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GokoTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goko.GokoTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GokoTableView.app/GokoTableView";
+			};
+			name = Debug;
+		};
+		E819B18B2105BFC10045D760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GokoTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goko.GokoTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GokoTableView.app/GokoTableView";
+			};
+			name = Release;
+		};
+		E819B18D2105BFC10045D760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GokoTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goko.GokoTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GokoTableView;
+			};
+			name = Debug;
+		};
+		E819B18E2105BFC10045D760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GokoTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goko.GokoTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GokoTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E819B1552105BFBE0045D760 /* Build configuration list for PBXProject "GokoTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E819B1842105BFC10045D760 /* Debug */,
+				E819B1852105BFC10045D760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E819B1862105BFC10045D760 /* Build configuration list for PBXNativeTarget "GokoTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E819B1872105BFC10045D760 /* Debug */,
+				E819B1882105BFC10045D760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E819B1892105BFC10045D760 /* Build configuration list for PBXNativeTarget "GokoTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E819B18A2105BFC10045D760 /* Debug */,
+				E819B18B2105BFC10045D760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E819B18C2105BFC10045D760 /* Build configuration list for PBXNativeTarget "GokoTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E819B18D2105BFC10045D760 /* Debug */,
+				E819B18E2105BFC10045D760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E819B1522105BFBE0045D760 /* Project object */;
+}
