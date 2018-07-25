@@ -15,9 +15,12 @@
 		E819B16D2105BFC10045D760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B16C2105BFC10045D760 /* main.m */; };
 		E819B1772105BFC10045D760 /* GokoTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B1762105BFC10045D760 /* GokoTableViewTests.m */; };
 		E819B1822105BFC10045D760 /* GokoTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B1812105BFC10045D760 /* GokoTableViewUITests.m */; };
-		E819B1922105C0BD0045D760 /* UITableView+Goko.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B1912105C0BD0045D760 /* UITableView+Goko.m */; };
+		E819B1922105C0BD0045D760 /* UITableView+GokoUITableViewDelegateBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B1912105C0BD0045D760 /* UITableView+GokoUITableViewDelegateBlock.m */; };
 		E819B19D2105DBE30045D760 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B19C2105DBE30045D760 /* DemoCell.m */; };
 		E819B1A02105DBEF0045D760 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E819B19F2105DBEF0045D760 /* DemoModel.m */; };
+		E82F81CD2108271600DF62B8 /* UITableView+GokoEasy.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81CC2108271600DF62B8 /* UITableView+GokoEasy.m */; };
+		E82F81D12108797500DF62B8 /* UITableView+Goko.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81D02108797500DF62B8 /* UITableView+Goko.m */; };
+		E82F81D42108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81D32108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +57,19 @@
 		E819B17D2105BFC10045D760 /* GokoTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GokoTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E819B1812105BFC10045D760 /* GokoTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GokoTableViewUITests.m; sourceTree = "<group>"; };
 		E819B1832105BFC10045D760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E819B1902105C0BD0045D760 /* UITableView+Goko.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Goko.h"; sourceTree = "<group>"; };
-		E819B1912105C0BD0045D760 /* UITableView+Goko.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Goko.m"; sourceTree = "<group>"; };
-		E819B1932105C14D0045D760 /* GokoDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GokoDefine.h; sourceTree = "<group>"; };
+		E819B1902105C0BD0045D760 /* UITableView+GokoUITableViewDelegateBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+GokoUITableViewDelegateBlock.h"; sourceTree = "<group>"; };
+		E819B1912105C0BD0045D760 /* UITableView+GokoUITableViewDelegateBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GokoUITableViewDelegateBlock.m"; sourceTree = "<group>"; };
 		E819B19B2105DBE30045D760 /* DemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
 		E819B19C2105DBE30045D760 /* DemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
 		E819B19E2105DBEF0045D760 /* DemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
 		E819B19F2105DBEF0045D760 /* DemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoModel.m; sourceTree = "<group>"; };
+		E82F81CB2108271600DF62B8 /* UITableView+GokoEasy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+GokoEasy.h"; sourceTree = "<group>"; };
+		E82F81CC2108271600DF62B8 /* UITableView+GokoEasy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GokoEasy.m"; sourceTree = "<group>"; };
+		E82F81CE210827B200DF62B8 /* GokoDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GokoDefines.h; sourceTree = "<group>"; };
+		E82F81CF2108797500DF62B8 /* UITableView+Goko.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Goko.h"; sourceTree = "<group>"; };
+		E82F81D02108797500DF62B8 /* UITableView+Goko.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Goko.m"; sourceTree = "<group>"; };
+		E82F81D22108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+GokoUITableViewDataSourceBlock.h"; sourceTree = "<group>"; };
+		E82F81D32108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GokoUITableViewDataSourceBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +120,6 @@
 		E819B15C2105BFBE0045D760 /* GokoTableView */ = {
 			isa = PBXGroup;
 			children = (
-				E819B1932105C14D0045D760 /* GokoDefine.h */,
 				E819B19A2105DBB50045D760 /* demo */,
 				E819B18F2105BFEC0045D760 /* UITableView+Goko */,
 				E819B15D2105BFBE0045D760 /* AppDelegate.h */,
@@ -148,8 +156,15 @@
 		E819B18F2105BFEC0045D760 /* UITableView+Goko */ = {
 			isa = PBXGroup;
 			children = (
-				E819B1902105C0BD0045D760 /* UITableView+Goko.h */,
-				E819B1912105C0BD0045D760 /* UITableView+Goko.m */,
+				E82F81CE210827B200DF62B8 /* GokoDefines.h */,
+				E82F81CF2108797500DF62B8 /* UITableView+Goko.h */,
+				E82F81D02108797500DF62B8 /* UITableView+Goko.m */,
+				E819B1902105C0BD0045D760 /* UITableView+GokoUITableViewDelegateBlock.h */,
+				E819B1912105C0BD0045D760 /* UITableView+GokoUITableViewDelegateBlock.m */,
+				E82F81D22108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.h */,
+				E82F81D32108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m */,
+				E82F81CB2108271600DF62B8 /* UITableView+GokoEasy.h */,
+				E82F81CC2108271600DF62B8 /* UITableView+GokoEasy.m */,
 			);
 			path = "UITableView+Goko";
 			sourceTree = "<group>";
@@ -295,11 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82F81D42108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m in Sources */,
 				E819B1622105BFBE0045D760 /* ViewController.m in Sources */,
+				E82F81D12108797500DF62B8 /* UITableView+Goko.m in Sources */,
 				E819B19D2105DBE30045D760 /* DemoCell.m in Sources */,
 				E819B1A02105DBEF0045D760 /* DemoModel.m in Sources */,
-				E819B1922105C0BD0045D760 /* UITableView+Goko.m in Sources */,
+				E819B1922105C0BD0045D760 /* UITableView+GokoUITableViewDelegateBlock.m in Sources */,
 				E819B16D2105BFC10045D760 /* main.m in Sources */,
+				E82F81CD2108271600DF62B8 /* UITableView+GokoEasy.m in Sources */,
 				E819B15F2105BFBE0045D760 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJJD8856HP;
 				INFOPLIST_FILE = GokoTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -486,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJJD8856HP;
 				INFOPLIST_FILE = GokoTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
