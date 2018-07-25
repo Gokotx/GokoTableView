@@ -89,7 +89,7 @@
 
 #pragma mark - UITableView Private Methods
 - (NSArray *)p_gokoCurrentSectionRowsArray:(NSInteger)section{
-//多section 逻辑待处理
+//duo sections is comming soon
     return self.rowDataArray;
 }
 
