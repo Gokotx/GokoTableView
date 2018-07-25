@@ -181,19 +181,19 @@
 -(UITableViewCellEditingStyle (^)(NSIndexPath *))goko_editingStyleForRowAtIndexPath{
     return GokoDynamicGetIvar(@selector(setGoko_editingStyleForRowAtIndexPath:));
 }
--(void)setGoko_titleForDeleteConfirmationButtonForRowAtIndexPath:(NSString *(^)(NSIndexPath *))goko_titleForDeleteConfirmationButtonForRowAtIndexPath{
+-(void)setGoko_titleForDeleteConfirmationButtonForRowAtIndexPath:(NSString *(^)(NSIndexPath *))goko_titleForDeleteConfirmationButtonForRowAtIndexPath NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED{
     GokoDynamicSetIvar(_cmd, goko_titleForDeleteConfirmationButtonForRowAtIndexPath);
 }
--(NSString *(^)(NSIndexPath *))goko_titleForDeleteConfirmationButtonForRowAtIndexPath{
+-(NSString *(^)(NSIndexPath *))goko_titleForDeleteConfirmationButtonForRowAtIndexPath NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED{
     return GokoDynamicGetIvar(@selector(setGoko_titleForDeleteConfirmationButtonForRowAtIndexPath:));
 }
 
 // Use -tableView:trailingSwipeActionsConfigurationForRowAtIndexPath: instead of this method, which will be deprecated in a future release.
 // This method supersedes -tableView:titleForDeleteConfirmationButtonForRowAtIndexPath: if return value is non-nil
--(void)setGoko_editActionsForRowAtIndexPath:(NSArray<UITableViewRowAction *> *(^)(NSIndexPath *))goko_editActionsForRowAtIndexPath{
+-(void)setGoko_editActionsForRowAtIndexPath:(NSArray<UITableViewRowAction *> *(^)(NSIndexPath *))goko_editActionsForRowAtIndexPath NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED{
     GokoDynamicSetIvar(_cmd, goko_editActionsForRowAtIndexPath);
 }
--(NSArray<UITableViewRowAction *> *(^)(NSIndexPath *))goko_editActionsForRowAtIndexPath{
+-(NSArray<UITableViewRowAction *> *(^)(NSIndexPath *))goko_editActionsForRowAtIndexPath NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED{
     return GokoDynamicGetIvar(@selector(setGoko_editActionsForRowAtIndexPath:));
 }
 
@@ -201,16 +201,16 @@
 // Swipe actions
 // These methods supersede -editActionsForRowAtIndexPath: if implemented
 // return nil to get the default swipe actions
--(void)setGoko_leadingSwipeActionsConfigurationForRowAtIndexPath:(UISwipeActionsConfiguration *(^)(NSIndexPath *))goko_leadingSwipeActionsConfigurationForRowAtIndexPath{
+-(void)setGoko_leadingSwipeActionsConfigurationForRowAtIndexPath:(UISwipeActionsConfiguration *(^)(NSIndexPath *))goko_leadingSwipeActionsConfigurationForRowAtIndexPath API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos){
     GokoDynamicSetIvar(_cmd, goko_leadingSwipeActionsConfigurationForRowAtIndexPath);
 }
--(UISwipeActionsConfiguration *(^)(NSIndexPath *))goko_leadingSwipeActionsConfigurationForRowAtIndexPath{
+-(UISwipeActionsConfiguration *(^)(NSIndexPath *))goko_leadingSwipeActionsConfigurationForRowAtIndexPath API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos){
     return GokoDynamicGetIvar(@selector(setGoko_leadingSwipeActionsConfigurationForRowAtIndexPath:));
 }
--(void)setGoko_trailingSwipeActionsConfigurationForRowAtIndexPath:(UISwipeActionsConfiguration *(^)(NSIndexPath *))goko_trailingSwipeActionsConfigurationForRowAtIndexPath{
+-(void)setGoko_trailingSwipeActionsConfigurationForRowAtIndexPath:(UISwipeActionsConfiguration *(^)(NSIndexPath *))goko_trailingSwipeActionsConfigurationForRowAtIndexPath API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos){
     GokoDynamicSetIvar(_cmd, goko_trailingSwipeActionsConfigurationForRowAtIndexPath);
 }
--(UISwipeActionsConfiguration *(^)(NSIndexPath *))goko_trailingSwipeActionsConfigurationForRowAtIndexPath{
+-(UISwipeActionsConfiguration *(^)(NSIndexPath *))goko_trailingSwipeActionsConfigurationForRowAtIndexPath API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos){
     return GokoDynamicGetIvar(@selector(setGoko_trailingSwipeActionsConfigurationForRowAtIndexPath:));
 }
 
@@ -224,16 +224,16 @@
 
 
 // The willBegin/didEnd methods are called whenever the 'editing' property is automatically changed by the table (allowing insert/delete/move). This is done by a swipe activating a single row
--(void)setGoko_willBeginEditingRowAtIndexPath:(void (^)(NSIndexPath *))goko_willBeginEditingRowAtIndexPath{
+-(void)setGoko_willBeginEditingRowAtIndexPath:(void (^)(NSIndexPath *))goko_willBeginEditingRowAtIndexPath __TVOS_PROHIBITED{
     GokoDynamicSetIvar(_cmd, goko_willBeginEditingRowAtIndexPath);
 }
--(void (^)(NSIndexPath *))goko_willBeginEditingRowAtIndexPath{
+-(void (^)(NSIndexPath *))goko_willBeginEditingRowAtIndexPath __TVOS_PROHIBITED{
     return GokoDynamicGetIvar(@selector(setGoko_willBeginEditingRowAtIndexPath:));
 }
--(void)setGoko_didEndEditingRowAtIndexPath:(void (^)(NSIndexPath *))goko_didEndEditingRowAtIndexPath{
+-(void)setGoko_didEndEditingRowAtIndexPath:(void (^)(NSIndexPath *))goko_didEndEditingRowAtIndexPath __TVOS_PROHIBITED{
     GokoDynamicSetIvar(_cmd, goko_didEndEditingRowAtIndexPath);
 }
--(void (^)(NSIndexPath *))goko_didEndEditingRowAtIndexPath{
+-(void (^)(NSIndexPath *))goko_didEndEditingRowAtIndexPath __TVOS_PROHIBITED{
     return GokoDynamicGetIvar(@selector(setGoko_didEndEditingRowAtIndexPath:));
 }
 
@@ -265,7 +265,7 @@
 -(void)setGoko_canPerformAction_forRowAtIndexPath_withSender:(BOOL (^)(SEL, NSIndexPath *, id))goko_canPerformAction_forRowAtIndexPath_withSender{
     GokoDynamicSetIvar(_cmd, goko_canPerformAction_forRowAtIndexPath_withSender);
 }
--(BOOL (^)(SEL, NSIndexPath *, id))goko_canPerformAction_forRowAtIndexPath_withSender{
+-(BOOL (^)(SEL, NSIndexPath *, id))goko_canPerformAction_forRowAtIndexPath_withSender {
     return GokoDynamicGetIvar(@selector(setGoko_canPerformAction_forRowAtIndexPath_withSender:));
 }
 -(void)setGoko_performAction_forRowAtIndexPath_withSender:(void (^)(SEL, NSIndexPath *, id))goko_performAction_forRowAtIndexPath_withSender{
@@ -276,34 +276,34 @@
 }
 
 // Focus
--(void)setGoko_canFocusRowAtIndexPath:(BOOL (^)(NSIndexPath *))goko_canFocusRowAtIndexPath{
+-(void)setGoko_canFocusRowAtIndexPath:(BOOL (^)(NSIndexPath *))goko_canFocusRowAtIndexPath NS_AVAILABLE_IOS(9_0){
     GokoDynamicSetIvar(_cmd, goko_canFocusRowAtIndexPath);
 }
--(BOOL (^)(NSIndexPath *))goko_canFocusRowAtIndexPath{
+-(BOOL (^)(NSIndexPath *))goko_canFocusRowAtIndexPath NS_AVAILABLE_IOS(9_0){
     return GokoDynamicGetIvar(@selector(setGoko_canFocusRowAtIndexPath:));
 }
--(void)setGoko_shouldUpdateFocusInContext:(BOOL (^)(UITableViewFocusUpdateContext *))goko_shouldUpdateFocusInContext{
+-(void)setGoko_shouldUpdateFocusInContext:(BOOL (^)(UITableViewFocusUpdateContext *))goko_shouldUpdateFocusInContext NS_AVAILABLE_IOS(9_0){
     GokoDynamicSetIvar(_cmd, goko_shouldUpdateFocusInContext);
 }
--(BOOL (^)(UITableViewFocusUpdateContext *))goko_shouldUpdateFocusInContext{
+-(BOOL (^)(UITableViewFocusUpdateContext *))goko_shouldUpdateFocusInContext NS_AVAILABLE_IOS(9_0){
     return GokoDynamicGetIvar(@selector(setGoko_shouldUpdateFocusInContext:));
 }
--(void)setGoko_didUpdateFocusInContext_withAnimationCoordinator:(void (^)(UITableViewFocusUpdateContext *, UIFocusAnimationCoordinator *))goko_didUpdateFocusInContext_withAnimationCoordinator{
+-(void)setGoko_didUpdateFocusInContext_withAnimationCoordinator:(void (^)(UITableViewFocusUpdateContext *, UIFocusAnimationCoordinator *))goko_didUpdateFocusInContext_withAnimationCoordinator NS_AVAILABLE_IOS(9_0){
     GokoDynamicSetIvar(_cmd, goko_didUpdateFocusInContext_withAnimationCoordinator);
 }
--(void (^)(UITableViewFocusUpdateContext *, UIFocusAnimationCoordinator *))goko_didUpdateFocusInContext_withAnimationCoordinator{
+-(void (^)(UITableViewFocusUpdateContext *, UIFocusAnimationCoordinator *))goko_didUpdateFocusInContext_withAnimationCoordinator NS_AVAILABLE_IOS(9_0){
     return GokoDynamicGetIvar(@selector(setGoko_didUpdateFocusInContext_withAnimationCoordinator:));
 }
--(void)setGoko_indexPathForPreferredFocusedViewInTableView:(NSIndexPath *(^)(void))goko_indexPathForPreferredFocusedViewInTableView{
+-(void)setGoko_indexPathForPreferredFocusedViewInTableView:(NSIndexPath *(^)(void))goko_indexPathForPreferredFocusedViewInTableView NS_AVAILABLE_IOS(9_0){
     GokoDynamicSetIvar(_cmd, goko_indexPathForPreferredFocusedViewInTableView);
 }
--(NSIndexPath *(^)(void))goko_indexPathForPreferredFocusedViewInTableView{
+-(NSIndexPath *(^)(void))goko_indexPathForPreferredFocusedViewInTableView NS_AVAILABLE_IOS(9_0){
     return GokoDynamicGetIvar(@selector(setGoko_indexPathForPreferredFocusedViewInTableView:));
 }
--(void)setGoko_shouldSpringLoadRowAtIndexPath_withContext:(BOOL (^)(NSIndexPath *, id<UISpringLoadedInteractionContext>))goko_shouldSpringLoadRowAtIndexPath_withContext{
+-(void)setGoko_shouldSpringLoadRowAtIndexPath_withContext:(BOOL (^)(NSIndexPath *, id<UISpringLoadedInteractionContext>))goko_shouldSpringLoadRowAtIndexPath_withContext API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos){
     GokoDynamicSetIvar(_cmd, goko_shouldSpringLoadRowAtIndexPath_withContext);
 }
--(BOOL (^)(NSIndexPath *, id<UISpringLoadedInteractionContext>))goko_shouldSpringLoadRowAtIndexPath_withContext{
+-(BOOL (^)(NSIndexPath *, id<UISpringLoadedInteractionContext>))goko_shouldSpringLoadRowAtIndexPath_withContext API_AVAILABLE(ios(11.0)) API_UNAVAILABLE(tvos, watchos){
     return GokoDynamicGetIvar(@selector(setGoko_shouldSpringLoadRowAtIndexPath_withContext:));
 }
 
