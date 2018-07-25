@@ -7,7 +7,6 @@
 //
 
 #import "UITableView+GokoEasy.h"
-#import "UITableView+Goko.h"
 
 @implementation UITableView (GokoEasy)
 
@@ -176,11 +175,12 @@
     GokoDynamicSetIvar(_cmd, cellReuseId);
 }
 
-- (GokoDidSelectCellBlock)didselectBlock{
+- (void (^)(UITableViewCell *))didselectBlock{
     return GokoDynamicGetIvar(@selector(setDidselectBlock:));
 }
-- (void)setDidselectBlock:(GokoDidSelectCellBlock)didselectBlock{
+- (void)setDidselectBlock:(void (^)(UITableViewCell *))didselectBlock{
     GokoDynamicSetIvar(_cmd, didselectBlock);
 }
+
 
 @end

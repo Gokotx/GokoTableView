@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UITableView+Goko.h"
 
 @interface UITableView (GokoEasy)
 /**
@@ -80,13 +81,11 @@
 #pragma mark - ================================
 #pragma mark - NSObject+GokoCellModel
 
-typedef void(^GokoDidSelectCellBlock)(UITableViewCell * cell);
-
 @interface NSObject (GokoCellModel)
 
 @property (nonatomic, assign) CGFloat cellRowHeight;
 @property (nonatomic, unsafe_unretained) Class bindingCellClass;
 @property (nonatomic, copy) NSString * cellReuseId;
-@property (nonatomic, copy) GokoDidSelectCellBlock didselectBlock;
+@property (nonatomic, copy) GokoEasyBlock1(void, didselectBlock, UITableViewCell *, cell);
 
 @end
