@@ -34,7 +34,7 @@
     }];
     [tableView setGoko_cellForRowAtIndexPath:^UITableViewCell *(NSIndexPath *indexPath) {
         @strongify(tableView);
-        NSObject * cellBindingData = tableView.rowDataArray[indexPath.row];
+        NSObject * cellBindingData = [tableView p_gokoCurrentSectionRowsArray:indexPath.section][indexPath.row];
         NSString * cellReuseId = cellBindingData.cellReuseId;
         UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellReuseId];;
         if (nil == cell) {
