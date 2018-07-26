@@ -22,12 +22,14 @@ pod install
 - Not support now . coming soon
 ## Manually
 - Just drag the `UITableView+Goko` folder into your project .
+## Usage
 - Then 
 ```
 import "UITableView+Goko.h"
 ```
-- All UITableViewDelegate & UITableViewDataSource Method are supporting implement with Block now. Looks like this
+- All UITableViewDelegate & UITableViewDataSource Method are supporting implement with Block now. Looks like this (Attention: delegate&datasource are auto binding to TableView itself, do not binding to some ViewController again)
 ```
+...
 [tableView setGoko_numberOfRowsInSection:^NSInteger(NSInteger section) {
     return 1;
 }];
