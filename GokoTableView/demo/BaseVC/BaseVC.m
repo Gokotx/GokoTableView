@@ -27,7 +27,6 @@
     }else{
         [self subRow];
     }
-    
 }
 -(void)addRow{
     // subclass override it

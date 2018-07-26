@@ -54,7 +54,7 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //如果是多种cell ，这里还需要做不同的判断
-    //if duo class cells , it should be have some if else...
+    //if duo class cells in need, it should be have some if else...
     DemoCell * cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(DemoCell.class)];
     return cell;
 }

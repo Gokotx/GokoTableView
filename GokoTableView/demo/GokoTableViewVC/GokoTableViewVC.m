@@ -44,6 +44,7 @@
 #pragma mark - Property Initial
 -(NSMutableArray *)dataArray{
     if (nil == _dataArray) {
+        //generate data
         _dataArray = [DemoModel easyModels];
     }
     return _dataArray;
