@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "UITableView+GokoEasy.h"
-#import "DemoCell.h"
 #import "DemoModel.h"
 
 @interface ViewController ()
