@@ -27,6 +27,7 @@
 		E82F81E621097AA400DF62B8 /* GokoTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81E521097AA400DF62B8 /* GokoTableViewVC.m */; };
 		E82F81E921097AB100DF62B8 /* NormalTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81E821097AB100DF62B8 /* NormalTableViewVC.m */; };
 		E82F81ED2109A04C00DF62B8 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81EC2109A04C00DF62B8 /* BaseVC.m */; };
+		E82F822E2109C69600DF62B8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E82F822D2109C69600DF62B8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		E82F81E821097AB100DF62B8 /* NormalTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewVC.m; sourceTree = "<group>"; };
 		E82F81EB2109A04C00DF62B8 /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		E82F81EC2109A04C00DF62B8 /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		E82F822C2109C48E00DF62B8 /* GokoTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GokoTableView.h; sourceTree = "<group>"; };
+		E82F822D2109C69600DF62B8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = GokoTableView/README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,7 @@
 				E819B1682105BFC10045D760 /* LaunchScreen.storyboard */,
 				E819B16B2105BFC10045D760 /* Info.plist */,
 				E819B16C2105BFC10045D760 /* main.m */,
+				E82F822D2109C69600DF62B8 /* README.md */,
 			);
 			path = GokoTableView;
 			sourceTree = "<group>";
@@ -174,6 +178,7 @@
 		E819B18F2105BFEC0045D760 /* UITableView+Goko */ = {
 			isa = PBXGroup;
 			children = (
+				E82F822C2109C48E00DF62B8 /* GokoTableView.h */,
 				E82F81CE210827B200DF62B8 /* GokoDefines.h */,
 				E82F81CF2108797500DF62B8 /* UITableView+Goko.h */,
 				E82F81D02108797500DF62B8 /* UITableView+Goko.m */,
@@ -347,6 +352,7 @@
 			files = (
 				E819B16A2105BFC10045D760 /* LaunchScreen.storyboard in Resources */,
 				E819B1672105BFC10045D760 /* Assets.xcassets in Resources */,
+				E82F822E2109C69600DF62B8 /* README.md in Resources */,
 				E819B1652105BFBE0045D760 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -544,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
