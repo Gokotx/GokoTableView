@@ -59,8 +59,8 @@
         @strongify(tableView);
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         NSObject * cellData = [tableView p_gokoCurrentSectionRowsArray:indexPath.section][indexPath.row];
-        if (cellData.didselectBlock) {
-            cellData.didselectBlock([tableView cellForRowAtIndexPath:indexPath]);
+        if (cellData.didselectCellBlock) {
+            cellData.didselectCellBlock([tableView cellForRowAtIndexPath:indexPath]);
         }
     }];
     return tableView;

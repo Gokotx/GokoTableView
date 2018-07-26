@@ -46,10 +46,10 @@
     GokoDynamicSetIvar(_cmd, cellReuseId);
 }
 
-- (void (^)(UITableViewCell *))didselectBlock{
-    return GokoDynamicGetIvar(@selector(setDidselectBlock:));
+- (void (^)(UITableViewCell *))didselectCellBlock{
+    return GokoDynamicGetIvar(@selector(setDidselectCellBlock:));
 }
-- (void)setDidselectBlock:(void (^)(UITableViewCell *))didselectBlock{
+- (void)setDidselectCellBlock:(void (^)(UITableViewCell *))didselectBlock{
     GokoDynamicSetIvar(_cmd, didselectBlock);
 }
 

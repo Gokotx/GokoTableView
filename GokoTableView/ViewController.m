@@ -37,7 +37,7 @@
         model.cellRowHeight = 50;
         model.titleText = @(i).stringValue;
         model.color = [UIColor redColor];
-        model.didselectBlock = ^(UITableViewCell *cell) {
+        model.didselectCellBlock = ^(UITableViewCell *cell) {
             NSLog(@"%@",cell.indexPath);
         };
         [temp addObject:model];
@@ -60,7 +60,7 @@
     model.titleText = @(i).stringValue;
     //cell中的具体控件的点击，在cell中自行处理。
     //这里处理整个cell的点击
-    model.didselectBlock = ^(UITableViewCell *cell) {
+    model.didselectCellBlock = ^(UITableViewCell *cell) {
         cell.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0];
         NSLog(@"%@",cell.indexPath);
     };

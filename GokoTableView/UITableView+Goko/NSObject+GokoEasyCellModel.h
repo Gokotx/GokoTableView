@@ -15,6 +15,6 @@
 @property (nonatomic, assign)               CGFloat cellRowHeight;
 @property (nonatomic, unsafe_unretained)    Class bindingCellClass;
 @property (nonatomic, copy)                 NSString * cellReuseId;
-@property (nonatomic, copy)                 GokoEasyBlock1(void, didselectBlock, UITableViewCell *, cell);
+@property (nonatomic, copy)                 GokoEasyBlock1(void, didselectCellBlock, UITableViewCell *, cell);
 
 @end
