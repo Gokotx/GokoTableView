@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "UITableView+GokoUITableViewDelegateBlock.h"
 #import "UITableView+GokoUITableViewDataSourceBlock.h"
+#import "UITableView+GokoEasy.h"
+
+#import "UITableViewCell+GokoEasy.h"
+#import "NSObject+GokoEasyCellModel.h"
+
 
 @interface UITableView (Goko)
 

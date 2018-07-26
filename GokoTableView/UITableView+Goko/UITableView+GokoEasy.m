@@ -45,7 +45,8 @@
     }];
     [tableView setGoko_willDisplayCell:^(UITableViewCell *cell, NSIndexPath *indexPath) {
         @strongify(tableView);
-        cell.bindingData = [tableView p_gokoCurrentSectionRowsArray:indexPath.section][indexPath.row];
+        NSObject * cellData = [tableView p_gokoCurrentSectionRowsArray:indexPath.section][indexPath.row];
+        cell.bindingData = cellData;
         cell.tableView = tableView;
         cell.indexPath = indexPath;
     }];
@@ -85,7 +86,6 @@
 }
 
 
-
 #pragma mark - UITableView Private Methods
 - (NSArray *)p_gokoCurrentSectionRowsArray:(NSInteger)section{
 //duo sections is comming soon
@@ -94,93 +94,3 @@
 
 @end
 
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma mark - ================================
-#pragma mark - UITableViewCell+Goko
-
-@implementation UITableViewCell (Goko)
-- (UITableView *)tableView{
-    return GokoDynamicGetIvar(@selector(setTableView:));
-}
-- (void)setTableView:(UITableView *)tableView{
-    GokoDynamicSetIvar(_cmd, tableView);
-}
-- (NSIndexPath *)indexPath{
-    return GokoDynamicGetIvar(@selector(setIndexPath:))
-}
-- (void)setIndexPath:(NSIndexPath *)indexPath{
-    GokoDynamicSetIvar(_cmd, indexPath);
-}
-
-- (NSObject *)bindingData{
-    return GokoDynamicGetIvar(@selector(setBindingData:));
-}
-- (void)setBindingData:(NSObject *)bindingData{
-    GokoDynamicSetIvar(_cmd, bindingData);
-}
-
-@end
-
-
-
-#pragma mark - ================================
-#pragma mark - NSObject+GokoCellModel
-@implementation NSObject (GokoCellModel)
-
-- (CGFloat)cellRowHeight{
-    NSNumber * cellRowHeight = (NSNumber *)GokoDynamicGetIvar(@selector(setCellRowHeight:));
-    if (!cellRowHeight) {
-        cellRowHeight = @44;
-    }
-    return cellRowHeight.floatValue;
-}
-- (void)setCellRowHeight:(CGFloat)cellRowHeight{
-    GokoDynamicSetIvar(_cmd, @(cellRowHeight));
-}
-
-
-- (Class)bindingCellClass{
-    //直接用class 会有warning，有点烦，所以就用string了。
-    NSString * bindingCellClass = GokoDynamicGetIvar(@selector(setBindingCellClass:));
-    if (!bindingCellClass) {
-        return UITableViewCell.class;
-    }
-    return NSClassFromString(bindingCellClass);
-}
-- (void)setBindingCellClass:(Class)bindingCellClass{
-    GokoDynamicSetIvar(_cmd, NSStringFromClass(bindingCellClass));
-}
-
-
-
-- (NSString *)cellReuseId{
-    NSString * cellReuseId = GokoDynamicGetIvar(@selector(setCellReuseId:));
-    if (!cellReuseId) {
-        cellReuseId = NSStringFromClass(self.bindingCellClass);
-    }
-    return cellReuseId;
-}
-- (void)setCellReuseId:(NSString *)cellReuseId{
-    GokoDynamicSetIvar(_cmd, cellReuseId);
-}
-
-- (void (^)(UITableViewCell *))didselectBlock{
-    return GokoDynamicGetIvar(@selector(setDidselectBlock:));
-}
-- (void)setDidselectBlock:(void (^)(UITableViewCell *))didselectBlock{
-    GokoDynamicSetIvar(_cmd, didselectBlock);
-}
-
-
-@end

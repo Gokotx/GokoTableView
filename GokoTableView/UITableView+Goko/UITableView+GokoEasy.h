@@ -51,41 +51,4 @@
                   withRowAnimation:(UITableViewRowAnimation)animation;
 
 
-
-@end
-
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma mark - ================================
-#pragma mark - UITableViewCell+Goko
-
-@interface UITableViewCell (Goko)
-
-@property (nonatomic, strong) NSIndexPath * indexPath;
-@property (nonatomic, strong) UITableView * tableView;
-@property (nonatomic, strong) NSObject * bindingData;
-
-@end
-
-
-#pragma mark - ================================
-#pragma mark - NSObject+GokoCellModel
-
-@interface NSObject (GokoCellModel)
-
-@property (nonatomic, assign) CGFloat cellRowHeight;
-@property (nonatomic, unsafe_unretained) Class bindingCellClass;
-@property (nonatomic, copy) NSString * cellReuseId;
-@property (nonatomic, copy) GokoEasyBlock1(void, didselectBlock, UITableViewCell *, cell);
-
 @end

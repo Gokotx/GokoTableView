@@ -8,6 +8,9 @@
 
 #import "DemoCell.h"
 #import "DemoModel.h"
+#import "UITableView+Goko.h"
+@interface DemoCell()
+@end
 
 @implementation DemoCell
 
@@ -15,8 +18,9 @@
     [super awakeFromNib];
     // Initialization code
 }
--(void)setBindingData:(id)bindingData{
-    DemoModel * model = bindingData;
+
+-(void)setBindingData:(NSObject *)bindingData{
+    DemoModel * model = (DemoModel *)self.bindingData;
     self.textLabel.text = model.titleText;
     self.contentView.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0];;
     self.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0];

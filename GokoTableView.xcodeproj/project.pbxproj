@@ -21,6 +21,8 @@
 		E82F81CD2108271600DF62B8 /* UITableView+GokoEasy.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81CC2108271600DF62B8 /* UITableView+GokoEasy.m */; };
 		E82F81D12108797500DF62B8 /* UITableView+Goko.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81D02108797500DF62B8 /* UITableView+Goko.m */; };
 		E82F81D42108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81D32108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m */; };
+		E82F81D7210963D600DF62B8 /* UITableViewCell+GokoEasy.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81D6210963D600DF62B8 /* UITableViewCell+GokoEasy.m */; };
+		E82F81DD2109647100DF62B8 /* NSObject+GokoEasyCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F81DC2109647100DF62B8 /* NSObject+GokoEasyCellModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		E82F81D02108797500DF62B8 /* UITableView+Goko.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Goko.m"; sourceTree = "<group>"; };
 		E82F81D22108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+GokoUITableViewDataSourceBlock.h"; sourceTree = "<group>"; };
 		E82F81D32108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GokoUITableViewDataSourceBlock.m"; sourceTree = "<group>"; };
+		E82F81D5210963D600DF62B8 /* UITableViewCell+GokoEasy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+GokoEasy.h"; sourceTree = "<group>"; };
+		E82F81D6210963D600DF62B8 /* UITableViewCell+GokoEasy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+GokoEasy.m"; sourceTree = "<group>"; };
+		E82F81DB2109647100DF62B8 /* NSObject+GokoEasyCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+GokoEasyCellModel.h"; sourceTree = "<group>"; };
+		E82F81DC2109647100DF62B8 /* NSObject+GokoEasyCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GokoEasyCellModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,10 @@
 				E82F81D32108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m */,
 				E82F81CB2108271600DF62B8 /* UITableView+GokoEasy.h */,
 				E82F81CC2108271600DF62B8 /* UITableView+GokoEasy.m */,
+				E82F81D5210963D600DF62B8 /* UITableViewCell+GokoEasy.h */,
+				E82F81D6210963D600DF62B8 /* UITableViewCell+GokoEasy.m */,
+				E82F81DB2109647100DF62B8 /* NSObject+GokoEasyCellModel.h */,
+				E82F81DC2109647100DF62B8 /* NSObject+GokoEasyCellModel.m */,
 			);
 			path = "UITableView+Goko";
 			sourceTree = "<group>";
@@ -311,6 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E82F81D42108812300DF62B8 /* UITableView+GokoUITableViewDataSourceBlock.m in Sources */,
+				E82F81D7210963D600DF62B8 /* UITableViewCell+GokoEasy.m in Sources */,
+				E82F81DD2109647100DF62B8 /* NSObject+GokoEasyCellModel.m in Sources */,
 				E819B1622105BFBE0045D760 /* ViewController.m in Sources */,
 				E82F81D12108797500DF62B8 /* UITableView+Goko.m in Sources */,
 				E819B19D2105DBE30045D760 /* DemoCell.m in Sources */,
