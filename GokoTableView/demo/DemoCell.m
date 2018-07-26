@@ -9,6 +9,7 @@
 #import "DemoCell.h"
 #import "DemoModel.h"
 #import "UITableView+Goko.h"
+
 @interface DemoCell()
 @end
 
@@ -19,11 +20,13 @@
     // Initialization code
 }
 
--(void)setBindingData:(NSObject *)bindingData{
-    DemoModel * model = (DemoModel *)self.bindingData;
+// should be implemented for easy tableView
+-(void)setGoko_bindingData:(NSObject *)bindingData{
+    [super setGoko_bindingData:bindingData];
+    DemoModel * model = (DemoModel *)bindingData;
     self.textLabel.text = model.titleText;
-    self.contentView.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0];;
-    self.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0];
+    self.contentView.backgroundColor = model.color;
+    self.backgroundColor = model.color;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

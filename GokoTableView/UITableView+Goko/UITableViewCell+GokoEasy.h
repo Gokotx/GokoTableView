@@ -10,8 +10,8 @@
 
 @interface UITableViewCell (GokoEasy)
 
-@property (nonatomic, strong) NSIndexPath * indexPath;
-@property (nonatomic, strong) UITableView * tableView;
-@property (nonatomic, strong) NSObject * bindingData;
+@property (nonatomic, strong) NSIndexPath * goko_indexPath;
+@property (nonatomic, strong) UITableView * goko_tableView;
+@property (nonatomic, strong) NSObject * goko_bindingData;
 
 @end

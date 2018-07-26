@@ -11,23 +11,23 @@
 
 @implementation UITableViewCell (GokoEasy)
 
-- (UITableView *)tableView{
-    return GokoDynamicGetIvar(@selector(setTableView:));
+- (UITableView *)goko_tableView{
+    return GokoDynamicGetIvar(@selector(setGoko_tableView:));
 }
-- (void)setTableView:(UITableView *)tableView{
+- (void)setGoko_tableView:(UITableView *)tableView{
     GokoDynamicSetIvar(_cmd, tableView);
 }
-- (NSIndexPath *)indexPath{
-    return GokoDynamicGetIvar(@selector(setIndexPath:))
+- (NSIndexPath *)goko_indexPath{
+    return GokoDynamicGetIvar(@selector(setGoko_indexPath:))
 }
-- (void)setIndexPath:(NSIndexPath *)indexPath{
+- (void)setGoko_indexPath:(NSIndexPath *)indexPath{
     GokoDynamicSetIvar(_cmd, indexPath);
 }
 
-- (NSObject *)bindingData{
-    return GokoDynamicGetIvar(@selector(setBindingData:));
+- (NSObject *)goko_bindingData{
+    return GokoDynamicGetIvar(@selector(setGoko_bindingData:));
 }
-- (void)setBindingData:(NSObject *)bindingData{
+- (void)setGoko_bindingData:(NSObject *)bindingData{
     GokoDynamicSetIvar(_cmd, bindingData);
 }
 

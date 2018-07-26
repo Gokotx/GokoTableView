@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DemoCell : UITableViewCell
-
+-(void)setGoko_bindingData:(NSObject *)bindingData;
 @end

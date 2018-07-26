@@ -107,21 +107,6 @@
     return GokoDynamicGetIvar(@selector(setGoko_viewForFooterInSection:));
 }
 
-// Accessories (disclosures).
-
--(void)setGoko_accessoryTypeForRowWithIndexPath:(UITableViewCellAccessoryType (^)(NSIndexPath *))goko_accessoryTypeForRowWithIndexPath{
-    GokoDynamicSetIvar(_cmd, goko_accessoryTypeForRowWithIndexPath);
-}
--(UITableViewCellAccessoryType (^)(NSIndexPath *))goko_accessoryTypeForRowWithIndexPath{
-    return GokoDynamicGetIvar(@selector(setGoko_accessoryTypeForRowWithIndexPath:));
-}
--(void)setGoko_accessoryButtonTappedForRowWithIndexPath:(void (^)(NSIndexPath *))goko_accessoryButtonTappedForRowWithIndexPath{
-    GokoDynamicSetIvar(_cmd, goko_accessoryButtonTappedForRowWithIndexPath);
-}
--(void (^)(NSIndexPath *))goko_accessoryButtonTappedForRowWithIndexPath{
-    return GokoDynamicGetIvar(@selector(setGoko_accessoryButtonTappedForRowWithIndexPath:));
-}
-
 // Selection
 
 // -tableView:shouldHighlightRowAtIndexPath: is called when a touch comes down on a row.
@@ -389,18 +374,6 @@
     }
     return [UIView new];
 
-}
-
-// Accessories (disclosures).
-
-- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED{
-    if (self.goko_accessoryTypeForRowWithIndexPath) {
-        return self.goko_accessoryTypeForRowWithIndexPath(indexPath);
-    }
-    return UITableViewCellAccessoryNone;
-}
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
-    GokoExecuteBlock1(self.goko_accessoryButtonTappedForRowWithIndexPath, indexPath);
 }
 
 // Selection

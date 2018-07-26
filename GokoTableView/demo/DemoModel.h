@@ -12,4 +12,11 @@
 @interface DemoModel : NSObject
 @property (nonatomic, strong) NSString * titleText;
 @property (nonatomic, strong) UIColor * color;
+
++(NSMutableArray *)easyModels;
++(NSMutableArray *)normalModels;
++(instancetype)createEasyModelWithIndex:(NSInteger)index;
+
++(NSMutableArray *)homeModels;
+
 @end

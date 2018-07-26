@@ -12,9 +12,9 @@
 
 @interface NSObject (GokoEasyCellModel)
 
-@property (nonatomic, assign)               CGFloat cellRowHeight;
-@property (nonatomic, unsafe_unretained)    Class bindingCellClass;
-@property (nonatomic, copy)                 NSString * cellReuseId;
-@property (nonatomic, copy)                 GokoEasyBlock1(void, didselectCellBlock, UITableViewCell *, cell);
+@property (nonatomic, assign)               CGFloat goko_rowHeight;
+@property (nonatomic, unsafe_unretained)    Class goko_cellClass;
+@property (nonatomic, copy)                 NSString * goko_cellReuseId;
+@property (nonatomic, copy)                 GokoEasyBlock1(void, goko_didselectCell, UITableViewCell *, cell);
 
 @end

@@ -41,11 +41,6 @@
 @property (nonatomic, copy) GokoEasyBlock1(UIView *, goko_viewForHeaderInSection, NSInteger, section);   // custom view for header. will be adjusted to default or specified header height
 @property (nonatomic, copy) GokoEasyBlock1(UIView *, goko_viewForFooterInSection, NSInteger, section);   // custom view for footer. will be adjusted to default or specified footer height
 
-// Accessories (disclosures).
-
-@property (nonatomic, copy) GokoEasyBlock1(UITableViewCellAccessoryType, goko_accessoryTypeForRowWithIndexPath, NSIndexPath *, indexPath);
-@property (nonatomic, copy) GokoEasyBlock1(void, goko_accessoryButtonTappedForRowWithIndexPath, NSIndexPath *, indexPath);
-
 // Selection
 
 // -tableView:shouldHighlightRowAtIndexPath: is called when a touch comes down on a row.

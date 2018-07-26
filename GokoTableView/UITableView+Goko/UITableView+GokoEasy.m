@@ -35,10 +35,11 @@
     [tableView setGoko_cellForRowAtIndexPath:^UITableViewCell *(NSIndexPath *indexPath) {
         @strongify(tableView);
         NSObject * cellBindingData = [tableView p_gokoCurrentSectionRowsArray:indexPath.section][indexPath.row];
-        NSString * cellReuseId = cellBindingData.cellReuseId;
+        NSString * cellReuseId = cellBindingData.goko_cellReuseId;
         UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellReuseId];;
         if (nil == cell) {
-            Class cellClass = cellBindingData.bindingCellClass;
+            Class cellClass = cellBindingData.goko_cellClass;
+            NSAssert(![cellClass isKindOfClass:[UITableViewCell class]], @"model should binding cell class");
             cell = [[cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellReuseId];
         }
         return cell;
@@ -46,21 +47,21 @@
     [tableView setGoko_willDisplayCell:^(UITableViewCell *cell, NSIndexPath *indexPath) {
         @strongify(tableView);
         NSObject * cellData = [tableView p_gokoCurrentSectionRowsArray:indexPath.section][indexPath.row];
-        cell.bindingData = cellData;
-        cell.tableView = tableView;
-        cell.indexPath = indexPath;
+        cell.goko_bindingData = cellData;
+        cell.goko_tableView = tableView;
+        cell.goko_indexPath = indexPath;
     }];
     [tableView setGoko_heightForRowAtIndexPath:^CGFloat(NSIndexPath *indexPath) {
         @strongify(tableView);
         NSObject * cellData = [tableView p_gokoCurrentSectionRowsArray:indexPath.section][indexPath.row];
-        return cellData.cellRowHeight;
+        return cellData.goko_rowHeight;
     }];
     [tableView setGoko_didSelectRowAtIndexPath:^(NSIndexPath *indexPath) {
         @strongify(tableView);
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         NSObject * cellData = [tableView p_gokoCurrentSectionRowsArray:indexPath.section][indexPath.row];
-        if (cellData.didselectCellBlock) {
-            cellData.didselectCellBlock([tableView cellForRowAtIndexPath:indexPath]);
+        if (cellData.goko_didselectCell) {
+            cellData.goko_didselectCell([tableView cellForRowAtIndexPath:indexPath]);
         }
     }];
     return tableView;
