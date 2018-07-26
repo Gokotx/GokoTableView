@@ -13,6 +13,7 @@
 #pragma mark - ================================
 #pragma mark - UITableView+GokoUITableViewDelegateBlock
 
+API_AVAILABLE(ios(11.0))
 @interface UITableView (GokoUITableViewDelegateBlock)
 
 // Display customization
