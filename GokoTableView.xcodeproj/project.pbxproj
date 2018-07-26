@@ -88,6 +88,7 @@
 		E82F81E821097AB100DF62B8 /* NormalTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewVC.m; sourceTree = "<group>"; };
 		E82F81EB2109A04C00DF62B8 /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		E82F81EC2109A04C00DF62B8 /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		E82F822C2109C48E00DF62B8 /* GokoTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GokoTableView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +175,7 @@
 		E819B18F2105BFEC0045D760 /* UITableView+Goko */ = {
 			isa = PBXGroup;
 			children = (
+				E82F822C2109C48E00DF62B8 /* GokoTableView.h */,
 				E82F81CE210827B200DF62B8 /* GokoDefines.h */,
 				E82F81CF2108797500DF62B8 /* UITableView+Goko.h */,
 				E82F81D02108797500DF62B8 /* UITableView+Goko.m */,
