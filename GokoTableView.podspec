@@ -2,9 +2,8 @@ Pod::Spec.new do |s|
   s.name             = "GokoTableView"  
   s.version          = "0.1.0"  
   s.summary          = "A block supported UITableView"  
-  s.description      = <<-DESC  
-                       It is a block supported UITableView, which implement by Objective-C.  
-                       DESC  
+  s.description      = <<-DESC It is a block supported UITableView, which implement by Objective-C. DESC>>
+  
   s.homepage         = "https://github.com/Gokotx/GokoTableView"  
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"  
   s.license          = 'MIT'  
