@@ -25,7 +25,7 @@ pod install
 ## Usage
 - First 
 ```
-import "UITableView+Goko.h"
+import <UITableView+Goko.h>
 ```
 - All UITableViewDelegate & UITableViewDataSource Method are supporting implement with Block now. Looks like below (`Attention: delegate&datasource are auto binding to TableView itself, do not binding to some ViewController again`)
 ```
