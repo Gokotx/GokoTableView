@@ -60,7 +60,7 @@
         //no necessray to add delegate&dataSource while import "UITableView+Goko.h"
         @weakify(self);
         @weakify(tableView);
-        [tableView setGoko_numberOfRowsInSection:^NSInteger(NSInteger section) {
+        [tableView setGoko_numberOfSectionsInTableView:^NSInteger{
             return 1;
         }];
         [tableView setGoko_numberOfRowsInSection:^NSInteger(NSInteger section) {

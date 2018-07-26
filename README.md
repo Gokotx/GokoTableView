@@ -30,9 +30,9 @@ import "UITableView+Goko.h"
 - All UITableViewDelegate & UITableViewDataSource Method are supporting implement with Block now. Looks like below (`Attention: delegate&datasource are auto binding to TableView itself, do not binding to some ViewController again`)
 ```
 ...
-[tableView setGoko_numberOfRowsInSection:^NSInteger(NSInteger section) {
+[tableView setGoko_numberOfSectionsInTableView:^NSInteger{
     return 1;
-}];
+}]
 [tableView setGoko_numberOfRowsInSection:^NSInteger(NSInteger section) {
     @strongify(self);
     return self.dataArray.count;
