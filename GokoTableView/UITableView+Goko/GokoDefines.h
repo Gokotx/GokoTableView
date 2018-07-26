@@ -43,16 +43,16 @@ GokoEasyBlock(returnType, blockName) \
 returnType (^blockName)(void);
 
 #define \
-GokoEasyBlock1(returnType, blockName, paramType1, patamValue1)\
-returnType (^blockName)(paramType1 patamValue1);
+GokoEasyBlock1(returnType, blockName, paramType1, paramValue1)\
+returnType (^blockName)(paramType1 paramValue1);
 
 #define \
-GokoEasyBlock2(returnType, blockName, paramType1, patamValue1, paramType2, patamValue2)\
-returnType (^blockName)(paramType1 patamValue1, paramType2 patamValue2);
+GokoEasyBlock2(returnType, blockName, paramType1, patamValue1, paramType2, paramValue2)\
+returnType (^blockName)(paramType1 patamValue1, paramType2 paramValue2);
 
 #define \
-GokoEasyBlock3(returnType, blockName, paramType1, patamValue1, paramType2, patamValue2, paramType3, patamValue3)\
-returnType (^blockName)(paramType1 patamValue1, paramType2 patamValue2, paramType3 patamValue3);
+GokoEasyBlock3(returnType, blockName, paramType1, patamValue1, paramType2, patamValue2, paramType3, paramValue3)\
+returnType (^blockName)(paramType1 patamValue1, paramType2 patamValue2, paramType3 paramValue3);
 
 #define \
 GokoExecuteBlock(gokoEasyBlock)\
