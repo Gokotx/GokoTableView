@@ -105,24 +105,4 @@ if(gokoEasyBlock3) gokoEasyBlock3(value1, value2, value3)
     #endif
 #endif
 
-
-#define \
-GokoTotalParams(firstParam) ({\
-    NSMutableArray * paramArray = [[NSMutableArray alloc]init];\
-    va_list argList;\
-    if (firstParam) {\
-    [paramArray addObject:firstParam];\
-    va_start(argList, firstParam);\
-    id tempObject;\
-    while ((tempObject = va_arg(argList, id))) {\
-            [paramArray addObject:tempObject];\
-        }\
-        va_end(argList);\
-    }\
-    paramArray;\
-})
-
-
-
-
 #endif /* GokoDefines_h */
