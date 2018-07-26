@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //generate data
     self.tableView.rowDataArray = [DemoModel easyModels];
     self.stepper.value = self.tableView.rowDataArray.count;
     [self.view addSubview:self.tableView];

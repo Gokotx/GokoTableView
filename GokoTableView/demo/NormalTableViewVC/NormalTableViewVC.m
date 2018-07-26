@@ -82,6 +82,7 @@
 
 -(NSMutableArray *)dataArray{
     if (nil == _dataArray) {
+        //generate data
         _dataArray = [DemoModel normalModels];
     }
     return _dataArray;
