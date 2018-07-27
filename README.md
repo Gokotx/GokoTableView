@@ -27,7 +27,7 @@ pod install
 ```
 #import <GokoTableView.h>
 ```
-- All UITableViewDelegate & UITableViewDataSource Method are supporting implement with Block now. Looks like below (`Attention: delegate&datasource are auto binding to TableView itself, do not binding to some ViewController again`)
+- All UITableViewDelegate & UITableViewDataSource Method are supporting implement with Block now. Looks like below (`Attention: delegate&datasource will bind to TableView itself automatically, do not bind to some ViewController again`)
 ```
 ...
 [tableView setGoko_numberOfSectionsInTableView:^NSInteger{
